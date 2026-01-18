@@ -1,6 +1,10 @@
 # Niels Gesture Detection
 
-This project uses **MediaPipe** and **OpenCV** to detect specific hand and face gestures in real-time via webcam and display corresponding overlay images of Niels De Stadsbader.
+This project uses **MediaPipe** and **OpenCV** to detect specific hand and face gestures in real-time via webcam and display corresponding overlay images of internationally famous Niels De Stadsbader. It's every 16y old's dream! 
+
+For now it's free but I'll be charging 16.99 per month soon!
+
+-- this is satire Nils pls don't sue me
 
 ---
 ## Features
@@ -75,7 +79,7 @@ project/
 │   ├── perfect_sign.jpg
 │   └── mouth_open.jpg
 │
-├── gesture_detection.py  # Main script
+├── main.py  # Main script
 └── README.md             # This file
 ```
 
@@ -127,4 +131,4 @@ python main.py
 
 ## License
 
-This project is free to use for educational and personal purposes.
+This project is free to use for educational and personal purposes. PLEASE DON'T SUE ME NILS
