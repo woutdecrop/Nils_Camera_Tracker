@@ -13,7 +13,7 @@ For now it's free but I'll be charging 16.99 per month soon!
     <img src="images/niels_normal.jpg" alt="Normal Niels" width="150"/>
   - 🤚 **Hand under chin** → Rest your hand under your chin  
     <img src="images/hand_under_chin.jpg" alt="Hand under chin" width="150"/>
-  - ✋ **Hand behind head (right side)** → Right hand behind head, elbow up  
+  - ✋ **Hand behind head (right side)** → Right hand behind head, elbow up  -> suprise
     <img src="images/hand_behind_head_on_right.jpg" alt="Hand behind head" width="150"/>
   - 👋 **Hand next to face (right or left)** → Hand gently next to your face  
     <img src="images/hand_next_to_face_right.jpg" alt="Hand next to face right" width="150"/>  
@@ -27,7 +27,7 @@ For now it's free but I'll be charging 16.99 per month soon!
 - Highlights detected face with a green rectangle
 - Displays the detected gesture name on the webcam feed
 - Shows corresponding overlay image for Niels De Stadsbader in a separate window
-
+- Suprise with one gesture!
 ---
 
 ## Requirements

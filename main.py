@@ -3,11 +3,25 @@ import mediapipe as mp
 import numpy as np
 import os
 import math
+import pygame  # New for audio
+
 # Initialize MediaPipe
 mp_face_mesh = mp.solutions.face_mesh
 mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 
+# Initialize pygame mixer for audio
+pygame.mixer.init()
+
+def load_audio():
+    audio_path = "./audio/swkon_meiske.mp3"
+    if os.path.exists(audio_path):
+        return pygame.mixer.Sound(audio_path)
+    else:
+        print(f"✗ Audio file not found: {audio_path}")
+        return None
+    
+    
 def load_overlay_images():
     """Load all overlay images"""
     images = {}
@@ -122,12 +136,12 @@ def detect_gesture(hand_landmarks, face_landmarks, face_center_x, frame_width):
 def resize_image_to_fit(image, max_width=800, max_height=600):
     """Resize image to fit within max dimensions while maintaining aspect ratio"""
     height, width = image.shape[:2]
-    
+
     # Calculate scaling factor
     scale_w = max_width / width
     scale_h = max_height / height
     scale = min(scale_w, scale_h)
-    
+
     # Only resize if image is larger than max dimensions
     if scale < 1.0:
         new_width = int(width * scale)
@@ -139,7 +153,8 @@ def resize_image_to_fit(image, max_width=800, max_height=600):
 def main():
     # Load overlay images
     overlay_images = load_overlay_images()
-    
+    gesture_sound = load_audio()
+
     if not overlay_images:
         print("\n🎥 Camera successfully started!")
         print("\n🖐️  Try these gestures:")
@@ -164,7 +179,7 @@ def main():
     
     # Track current gesture
     current_gesture = 'normal'
-    
+    is_playing = False #
     # Window names
     webcam_window = 'Your Face'
     niels_window = 'Niels De Stadsbader'
@@ -260,6 +275,18 @@ def main():
             else:
                 gesture_to_show = 'normal'
             
+            # --- AUDIO TRIGGER LOGIC ---
+            if detected_gesture == 'hand_behind_head_right':
+                if not is_playing and gesture_sound:
+                    gesture_sound.play()
+                    is_playing = True
+                    print("🎵 Playing: swkon_meiske.mp3")
+            else:
+                # Optional: Stop the music if the gesture is released
+                if is_playing and gesture_sound:
+                    gesture_sound.stop()
+                    is_playing = False
+
             # Update Niels window if gesture changed
             if gesture_to_show != current_gesture:
                 current_gesture = gesture_to_show
