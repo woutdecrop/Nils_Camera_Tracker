@@ -3,16 +3,22 @@
 This project uses **MediaPipe** and **OpenCV** to detect specific hand and face gestures in real-time via webcam and display corresponding overlay images of Niels De Stadsbader.
 
 ---
-
 ## Features
 
 - Detects the following gestures:
-  - ✨ **Normal Niels** → No gesture detected (default state)
-  - 🤚 **Hand under chin** → Rest your hand under your chin
-  - ✋ **Hand behind head (right side)** → Right hand behind head, elbow up
-  - 👋 **Hand next to face (right or left)** → Hand gently next to your face
-  - 👌 **Perfect Sign** → Thumb and index form a circle, other fingers up
-  - 😮 **Mouth open** → Open your mouth noticeably
+  - ✨ **Normal Niels** → No gesture detected (default state)  
+    ![Normal Niels](images/niels_normal.jpg)
+  - 🤚 **Hand under chin** → Rest your hand under your chin  
+    ![Hand under chin](images/hand_under_chin.jpg)
+  - ✋ **Hand behind head (right side)** → Right hand behind head, elbow up  
+    ![Hand behind head](images/hand_behind_head_on_right.jpg)
+  - 👋 **Hand next to face (right or left)** → Hand gently next to your face  
+    ![Hand next to face right](images/hand_next_to_face_right.jpg)  
+    ![Hand next to face left](images/hand_next_to_face_left.jpg)
+  - 👌 **Perfect Sign** → Thumb and index form a circle, other fingers up  
+    ![Perfect Sign](images/perfect_sign.jpg)
+  - 😮 **Mouth open** → Open your mouth noticeably  
+    ![Mouth open](images/mouth_open.jpg)
 
 - Real-time webcam feed with gesture overlay
 - Highlights detected face with a green rectangle
@@ -40,7 +46,7 @@ pip install opencv-python mediapipe numpy
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/reinesana/MeowCV.git
+git clone https://github.com/woutdecrop/Nils_Camera_Tracker
 ```
 
 ### 2. Install dependencies
