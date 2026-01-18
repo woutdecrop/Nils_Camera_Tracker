@@ -32,16 +32,15 @@ For now it's free but I'll be charging 16.99 per month soon!
 
 ## Requirements
 
-- Python 3.8+
-- OpenCV
-- MediaPipe
-- NumPy
+- Python 3.8+ (tested on 3.11.7)
+- OpenCV (`opencv-python==4.8.1.78`)
+- MediaPipe (`mediapipe==0.10.8`)
+- NumPy (`numpy==1.24.3`)
 
 Install dependencies using pip:
 
 ```bash
-pip install opencv-python mediapipe numpy
-```
+pip install numpy==1.24.3 mediapipe==0.10.8 opencv-python==4.8.1.78
 
 ---
 
@@ -53,7 +52,7 @@ git clone https://github.com/woutdecrop/Nils_Camera_Tracker
 ```
 
 ### 2. Install dependencies
-Python **3.9 – 3.12** required (tested on Python 3.11.7). Python **3.13+** is not supported for `mediapipe==0.10.14`.
+Python **3.9 – 3.12** required (tested on Python 3.11.9). Python **3.13+** is not supported for `mediapipe==0.10.14`.
 ```bash
 pip install -r requirements.txt
 ```
