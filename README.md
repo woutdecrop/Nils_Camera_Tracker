@@ -4,21 +4,20 @@ This project uses **MediaPipe** and **OpenCV** to detect specific hand and face 
 
 ---
 ## Features
-
 - Detects the following gestures:
   - ✨ **Normal Niels** → No gesture detected (default state)  
-    ![Normal Niels](images/niels_normal.jpg)
+    <img src="images/niels_normal.jpg" alt="Normal Niels" width="150"/>
   - 🤚 **Hand under chin** → Rest your hand under your chin  
-    ![Hand under chin](images/hand_under_chin.jpg)
+    <img src="images/hand_under_chin.jpg" alt="Hand under chin" width="150"/>
   - ✋ **Hand behind head (right side)** → Right hand behind head, elbow up  
-    ![Hand behind head](images/hand_behind_head_on_right.jpg)
+    <img src="images/hand_behind_head_on_right.jpg" alt="Hand behind head" width="150"/>
   - 👋 **Hand next to face (right or left)** → Hand gently next to your face  
-    ![Hand next to face right](images/hand_next_to_face_right.jpg)  
-    ![Hand next to face left](images/hand_next_to_face_left.jpg)
+    <img src="images/hand_next_to_face_right.jpg" alt="Hand next to face right" width="150"/>  
+    <img src="images/hand_next_to_face_left.jpg" alt="Hand next to face left" width="150"/>
   - 👌 **Perfect Sign** → Thumb and index form a circle, other fingers up  
-    ![Perfect Sign](images/perfect_sign.jpg)
+    <img src="images/perfect_sign.jpg" alt="Perfect Sign" width="150"/>
   - 😮 **Mouth open** → Open your mouth noticeably  
-    ![Mouth open](images/mouth_open.jpg)
+    <img src="images/mouth_open.jpg" alt="Mouth open" width="150"/>
 
 - Real-time webcam feed with gesture overlay
 - Highlights detected face with a green rectangle
@@ -90,7 +89,7 @@ project/
 2. Run the main script:
 
 ```bash
-python gesture_detection.py
+python main.py
 ```
 
 3. Follow the instructions printed in the terminal:
@@ -99,7 +98,7 @@ python gesture_detection.py
    - Move your hand gently next to your face (left or right)
    - Make the “👌 Perfect Sign”
    - Open your mouth noticeably
-4. Press `q` at any time to quit the program.
+4. Press `q` or `ctrl + c` at any time to quit the program.
 
 ---
 
