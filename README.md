@@ -1,6 +1,6 @@
-# Niels Gesture Detection
+# Nils Gesture Detection
 
-This project uses **MediaPipe** and **OpenCV** to detect specific hand and face gestures in real-time via webcam and display corresponding overlay images of internationally famous Niels De Stadsbader. It's every 16y old's dream! 
+This project uses **MediaPipe** and **OpenCV** to detect specific hand and face gestures in real-time via webcam and display corresponding overlay images of internationally famous Nils TheCityBather. It's every 16y old's dream! 
 
 For now it's free but I'll be charging 16.99 per month soon!
 
