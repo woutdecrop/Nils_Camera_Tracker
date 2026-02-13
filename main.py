@@ -14,7 +14,7 @@ mp_drawing = mp.solutions.drawing_utils
 pygame.mixer.init()
 
 def load_audio():
-    audio_path = "./audio/swkon_meiske.mp3"
+    audio_path = "./Nils_Camera_Tracker/audio/swkon_meiske.mp3"
     if os.path.exists(audio_path):
         return pygame.mixer.Sound(audio_path)
     else:
@@ -26,13 +26,13 @@ def load_overlay_images():
     """Load all overlay images"""
     images = {}
     image_files = {
-        'hand_behind_head_right': './images/hand_behind_head_on_right.jpg',
-        'hand_under_chin': './images/hand_under_chin.jpg',
-        'normal': './images/niels_normal.jpg',
-        'perfect_sign': './images/perfect_sign.jpg',
-        'mouth_open': './images/mouth_open.jpg',
-        'hand_next_to_face_right': './images/hand_next_to_face_right.jpg',
-        'hand_next_to_face_left': './images/hand_next_to_face_left.jpg'
+        'hand_behind_head_right': './Nils_Camera_Tracker/images/hand_behind_head_on_right.jpg',
+        'hand_under_chin': './Nils_Camera_Tracker/images/hand_under_chin.jpg',
+        'normal': './Nils_Camera_Tracker/images/niels_normal.jpg',
+        'perfect_sign': './Nils_Camera_Tracker/images/perfect_sign.jpg',
+        'mouth_open': './Nils_Camera_Tracker/images/mouth_open.jpg',
+        'hand_next_to_face_right': './Nils_Camera_Tracker/images/hand_next_to_face_right.jpg',
+        'hand_next_to_face_left': './Nils_Camera_Tracker/images/hand_next_to_face_left.jpg'
     }
     
     for key, filename in image_files.items():
